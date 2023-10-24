@@ -1,6 +1,6 @@
 const net = require("net");
 
-const connect = function() {
+const connect = function () {
   const conn = net.createConnection({
     host: "165.227.47.243",
     port: 50541,
@@ -21,27 +21,27 @@ const connect = function() {
 
   //Movements
   conn.on("connect", () => {
-    //setTimeout
-    // _____________________
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 50);
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 50);
-    // setTimeout(() => {
-    //   conn.write("Move: left");
-    // }, 50);
-    ///setInterval
-    // ________________________
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 1000);
-    // -------------------------------------
-    // conn.write("Move: up");
-    // conn.write("Move: down");
-    // conn.write("Move: left");
-    // conn.write("Move: right");
+    //   //setTimeout
+    //   // _____________________
+    //   // setTimeout(() => {
+    //   //   conn.write("Move: up");
+    //   // }, 50);
+    //   // setTimeout(() => {
+    //   //   conn.write("Move: down");
+    //   // }, 50);
+    //   // setTimeout(() => {
+    //   //   conn.write("Move: left");
+    //   // }, 50);
+    //   ///setInterval
+    //   // ________________________
+    //   // setInterval(() => {
+    //   //   conn.write("Move: up");
+    //   // }, 1000);
+    //   // -------------------------------------
+    //   // conn.write("Move: up");
+    //   // conn.write("Move: down");
+    //   // conn.write("Move: left");
+    //   // conn.write("Move: right");
   });
 
   // interpret incoming data as text

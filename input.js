@@ -2,7 +2,7 @@ const stdin = process.stdin;
 
 let connection;
 
-const setupInput = function(conn) {
+const setupInput = function (conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -11,7 +11,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
-const handleUserInput = function(key) {
+const handleUserInput = function (key) {
   if (key === "\u0003") {
     process.exit();
   }
@@ -34,6 +34,14 @@ const handleUserInput = function(key) {
     connection.write("Move: right");
     //d
     // console.log("Move: right");
+  }
+  if (key === "\u0068") {
+    //h => How are you!
+    connection.write("HAY");
+  }
+  if (key === "\u0065") {
+    //e => AiH!
+    connection.write("AiH");
   }
 };
 
